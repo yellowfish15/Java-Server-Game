@@ -1,0 +1,17 @@
+Standard byte format:
+
+SEP stands for unit separator and is represented by ASCII value of 31
+
+Client sends data:
+"client name" + SEP + "x-value" + SEP + "y-value" + SEP + Color_R + SEP + Color_G + SEP + Color_B + SEP
+where "" represents a string of characters
+
+Server sends player data:
+"client #1 name" + SEP + "x-value" + SEP + "y-value" + SEP + Color_R + SEP + Color_G + SEP + Color_B + SEP + Score +
+"client #2 name" + SEP + "x-value" + SEP + "y-value" + SEP + Color_R + SEP + Color_G + SEP + Color_B + SEP + Score +
+...
+where "" represents a string of characters
+
+Server sends circle data:
+x + SEP + y + SEP + fullRadius + SEP + currRadius + SEP + Color_R + SEP + Color_G + SEP + Color_B + SEP +
+...
